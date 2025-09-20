@@ -1,5 +1,5 @@
 import pytest
-from conflicts import check_command_conflicts
+from ..conflicts import check_command_conflicts
 
 def test_conflict_upper_lower():
     with pytest.raises(ValueError):
