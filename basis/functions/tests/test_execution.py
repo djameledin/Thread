@@ -1,4 +1,5 @@
-from execution import execute_commands
+import pytest
+from ..execution import execute_commands
 
 def test_upper_command():
     result = execute_commands("hello", ["UPPER"])
