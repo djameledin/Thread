@@ -1,6 +1,4 @@
-"""
-Project package initializer.
-"""
+"Project package initializer."
 
 from .parsing import parse_filename 
 from .execution import execute_commands
