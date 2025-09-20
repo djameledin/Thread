@@ -1,8 +1,8 @@
 import pytest
-from parsing import parse_filename
+from ..parsing import parse_filename
 
 def test_parse_valid_filename():
-    text, commands = parse_filename('return(type["hello"].UPPER.lower)')
+    text, commands = parse_filename('return(type["hello"], UPPER.lower)')
     assert text == "hello"
     assert commands == ["UPPER", "lower"]
 
